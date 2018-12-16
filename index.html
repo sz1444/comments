@@ -1,0 +1,43 @@
+<?php session_start();?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Komentarze</title>
+</head>
+<body>
+     <nav>
+        <div class="container">
+         <h1>komentarz.online</h1>
+         <span>Zalogowany jako:</span>
+         <span class="user"></span>
+         <button id="logout">Wyloguj</button>
+         </div>
+     </nav>
+
+  <section class="com-list">
+    <ul class="comments">
+
+    </ul>
+</section>
+<form id="form" name="form">
+  
+    <h2>Dodaj komentarz</h2>
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+      <div class="alert"><h3>Uzupełnij wszystkie pola by dadać komentarz!</h3></div>
+    <textarea id="contetns" name="contetns" id="" cols="30" rows="10" placeholder="Treść"></textarea>
+    <input id="send" type="button" value="Dodaj Komentarz">
+</form>
+
+<script src="main.js"></script>
+</body>
+</html>

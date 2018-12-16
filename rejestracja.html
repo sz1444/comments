@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja - komentarze</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form id="register">
+       <h2>Rejestracja</h2>
+       <p>Rejestracja do serwisu komentarze jest za darmo.</p>
+       
+        <div class="error">
+        
+        </div>
+        <input type="text" name="loginRegister" placeholder="login">
+        <br>
+        <input type="email" name="emailRegister" placeholder="email">
+        <br>
+        <input type="password" name="passwordRegister" placeholder="hasło">
+        <br>
+        <input type="password" name="passwordReturn" placeholder="powtórz hasło"><br>
+         <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" checked> <span>Akceptuję regulamin.</span></label>
+       <input id="creatuser" type="button" value="Zarejestruj się">
+        <a href="logowanie.html">Wróć do logowania</a>
+
+    </form>
+    <div class="register-success">
+       <div class="box">
+       <h2>Gratulacje</h2>
+        <h3>Twoje konto zostało utworzone</h3>
+            <a href="logowanie.html">Zaloguj się</a>
+            </div>
+    </div>
+   <script src="register.js"></script>
+</body>
+</html>
